@@ -18,7 +18,7 @@ const Login = () => {
         e.preventDefault();
         setSubmit("Logging in...")
         try {
-        const response = await fetch(`http://localhost:8000/api/auth/loginFarmer`, {
+        const response = await fetch(`${process.env.REACT_APP_SYNERGY_URI}/api/auth/loginFarmer`, {
             method: "POST",
             headers: {
                 "Content-type": "application/json",

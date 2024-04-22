@@ -165,7 +165,6 @@ import { MultiSelect } from "react-multi-select-component";
 import './Signup.css'
 import { useNavigate } from 'react-router-dom';
 import { AppContext } from '../context/AppContext';
-const baseUrl = "http://localhost:8000"
 
 const options = [
   { label: "Rice", value: "Rice" },
@@ -200,7 +199,7 @@ const Signup = () => {
     else {
       try {
         const cropsArray = cropsCultivated.map((e) => e.label);
-        const response = await fetch(`${baseUrl}/api/auth/createFarmer`, {
+        const response = await fetch(`${process.env.REACT_APP_SYNERGY_URI}/api/auth/createFarmer`, {
           method: "POST",
           headers: {
             "Content-type": "application/json; charset=UTF-8",
