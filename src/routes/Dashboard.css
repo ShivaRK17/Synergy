@@ -1,0 +1,70 @@
+/* styles.css */
+/* Dashboard Page */
+.dashboard-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .dashboard-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .profile {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #fff;
+    font-size: 1.1rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .profile-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+  }
+  .schemeslist{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .schemecard{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+    background-color: #fef;
+    width: 400px;
+  }
+  .schemecard h3{
+    font-family: 0.8rem;
+    font-family: 'Poppins';
+  }
+  .schemecard a{
+    color: blue;
+    text-decoration: none;
+  }
+  /* Responsive Layout */
+  @media screen and (max-width: 768px) {
+    .profile {
+      padding: 15px;
+    }
+  
+    .dashboard-title {
+      font-size: 24px;
+    }
+  
+    .profile-title {
+      font-size: 18px;
+    }
+  }
+  

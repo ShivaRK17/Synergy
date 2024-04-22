@@ -1,0 +1,43 @@
+  .home-container {
+    text-align: center;
+  }
+  
+  .prediction-links {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  .prediction-links li {
+    margin-bottom: 10px;
+  }
+  
+  .prediction-links li a {
+    text-decoration: none;
+    color: blue;
+    font-size: 18px;
+  }
+  
+  .prediction-links li a:hover {
+    color: darkblue;
+  }
+  
+  .prediction-container {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  /* .prediction-form {
+     Form styles 
+  } */
+  
+  .result-container {
+    margin-top: 20px;
+  }
+  
+  .result-container h3 {
+    margin-bottom: 10px;
+  }
+  

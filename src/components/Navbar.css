@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+  .sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+  }
+  
+  .sticky h1 {
+    color: blue;
+  }
+  
+  .sticky nav ul li {
+    color: blue;
+  }
+  
+  
+  header h1 {
+    color: blue;
+    font-family: 'Poppins';
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-right: 10px;
+    cursor: pointer;
+    padding: 0 5px;
+  }
+  nav ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Poppins';
+    letter-spacing: 1px;
+    color: black;
+  }
+  .active{
+    color: blue;
+  }
+  @media screen and (max-width: 768px) {
+    .navbar {
+      justify-content: center;
+      text-align: center;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navbar-links {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+      margin-top: 10px;
+    }
+  
+    .navbar-logo a {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+  }
