@@ -10,7 +10,7 @@ const RainfallPrediction = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('YOUR_RAINFALL_PREDICTION_API_URL', {
+      const response = await fetch(process.env.REACT_APP_RAINFALL_API, {
         location,
       });
       setIsRainfall(response.data.isRainfall);

@@ -15,6 +15,10 @@ const DiseasePrediction = () => {
       const response = await fetch(`${process.env.REACT_APP_DISEASE_API}/predict`, {
         method: 'POST',
         body: formData,
+        "headers": {
+          'Content-Type': 'application/json',
+          "Access-Control-Allow-Origin":"*"
+        },
       });
 
       if (response.ok) {

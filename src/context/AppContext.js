@@ -77,7 +77,7 @@ const AppProvider = ({children})=>{
     }
     const fetchForecastData = async (city) => {
         city = city || "guduru"
-        const apiKey = "b03a640e5ef6980o4da35b006t5f2942";
+        const apiKey = process.env.REACT_APP_SHE_API;
         const url = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
 
         try {

@@ -175,7 +175,7 @@ const options = [
 ];
 
 const Signup = () => {
-  const {getUserDetails} = useContext(AppContext)
+  const { getUserDetails } = useContext(AppContext)
   const [name, setName] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
   const [password, setPassword] = useState('');
@@ -203,6 +203,7 @@ const Signup = () => {
           method: "POST",
           headers: {
             "Content-type": "application/json; charset=UTF-8",
+            "Access-Control-Allow-Origin": "*"
           },
           body: JSON.stringify({ name, phoneNumber, password, dob, gender, location, landSize, crops: cropsArray })
         });

@@ -39,7 +39,8 @@ const handleSubmit = async (e) => {
     const response = await fetch(`${process.env.REACT_APP_FERTI_API}/predict`, {
       "method": "POST",
       "headers": {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
+        "Access-Control-Allow-Origin":"*"
       },
       "body": JSON.stringify(data)
     });

@@ -15,7 +15,7 @@ const YieldPrediction = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('YOUR_YIELD_PREDICTION_API_URL', {
+      const response = await fetch(process.env.REACT_APP_YIELD_API, {
         location,
         area,
         season,
@@ -199,11 +199,6 @@ const YieldPrediction = () => {
           <option value="121">Crop_Ber</option>
           <option value="122">Crop_Other Dry Fruit</option>
           <option value="123">Crop_Jute & mesta</option>
-
-
-
-          ** Process exited - Return Code: 0 **
-          Press Enter to exit terminal
         </select>
 
         <button type="submit">Predict</button>
